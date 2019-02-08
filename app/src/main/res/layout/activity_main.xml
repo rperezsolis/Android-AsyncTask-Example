@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/rows_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of rows"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/columns_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of columns"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="10"/>
+
+    <Button
+        android:id="@+id/btn_get_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Determine direction"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+</LinearLayout>
